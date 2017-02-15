@@ -40,7 +40,7 @@ Using [`sharp`](https://www.npmjs.com/package/sharp), returns the grayscale vers
         loader: 'custom-loader',
         options: {
           callback: (source, sourceMap, callback) => {
-            sharp().grayscale().toBuffer(callback);
+            sharp(source).grayscale().toBuffer(callback);
           }
         }
       }
