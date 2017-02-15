@@ -43,7 +43,7 @@ module.exports = function (source, map) {
   }
 
   // Invoke custom loader.
-  return config.callback.apply(context, source, map, context.callback);
+  return config.callback.call(context, source, map, context.callback);
 };
 
 // Mark as raw.

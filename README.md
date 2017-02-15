@@ -5,7 +5,48 @@
 `$ npm install custom-loader`
 
 ## Usage
+This module is useful for those times you want a loader but cant find or want to write one. How about just writing a function instead?
+
+### Example 1
+Performs a simple string replace.
+
 ```
+{
+  module: {
+    rules: [{
+      test: /\.js$/,
+      use: {
+        loader: 'custom-loader',
+        options: {
+          callback: (source) => {
+            return source.replace('foo', 'bar');
+          }
+        }
+      }
+    }]
+  }
+};
+```
+
+### Example 2
+Using `[sharp](https://www.npmjs.com/package/sharp)`, returns the grayscale version of the resource.
+
+```
+{
+  module: {
+    rules: [{
+      test: /\.(gif|jpe?g|png|svg|tiff|webp)(\?.*)?$/,
+      use: {
+        loader: 'custom-loader',
+        options: {
+          callback: (source, sourceMap, callback) => {
+            sharp().grayscale().toBuffer(callback);
+          }
+        }
+      }
+    }]
+  }
+};
 ```
 
 ## Changelog
