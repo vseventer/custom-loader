@@ -1,0 +1,28 @@
+{
+  "name"        : "custom-loader",
+  "version"     : "0.1.0-dev",
+  "description" : "Custom loader module for webpack.",
+  "keywords"    : [ "webpack", "loader", "module", "callback" ],
+  "homepage"    : "https://github.com/vseventer/custom-loader",
+  "bugs"        : "https://github.com/vseventer/custom-loader/issues",
+  "license"     : "MIT",
+  "author"      : "Mark van Seventer <mark@vseventer.com> (http://www.vseventer.com)",
+  "repository"  : "vseventer/custom-loader",
+  "main"        : "index.js",
+  "scripts"     : {
+    "pretest" : "semistandard | snazzy",
+    "test"    : "mocha"
+  },
+  "dependencies": { "loader-utils": "0.2.x" },
+  "devDependencies": {
+    "chai"         : "3.5.x",
+    "mocha"        : "3.2.x",
+    "semistandard" : "9.2.x",
+    "snazzy"       : "6.0.x",
+    "webpack"      : "2.2.x"
+  },
+  "engines": {
+    "node"    : ">=6.x",
+    "webpack" : ">=2.2.x"
+  }
+}
