@@ -35,7 +35,7 @@ Using [`sharp`](https://www.npmjs.com/package/sharp), returns the grayscale vers
 {
   module: {
     rules: [{
-      test: /\.(gif|jpe?g|png|svg|tiff|webp)(\?.*)?$/,
+      test: /\.(gif|jpe?g|png|svg|tiff|webp)$/,
       use: {
         loader: 'custom-loader',
         options: {
