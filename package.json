@@ -1,13 +1,13 @@
 {
-  "name"        : "custom-loader",
+  "name"        : "raw-custom-loader",
   "version"     : "0.1.0",
   "description" : "Custom loader module for webpack.",
   "keywords"    : [ "webpack", "loader", "module", "callback" ],
-  "homepage"    : "https://github.com/vseventer/custom-loader",
-  "bugs"        : "https://github.com/vseventer/custom-loader/issues",
+  "homepage"    : "https://github.com/vseventer/raw-custom-loader",
+  "bugs"        : "https://github.com/vseventer/raw-custom-loader/issues",
   "license"     : "MIT",
   "author"      : "Mark van Seventer <mark@vseventer.com> (http://www.vseventer.com)",
-  "repository"  : "vseventer/custom-loader",
+  "repository"  : "vseventer/raw-custom-loader",
   "main"        : "index.js",
   "scripts"     : {
     "pretest" : "semistandard | snazzy",

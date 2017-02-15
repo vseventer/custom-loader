@@ -35,16 +35,16 @@ const tmp = require('tmp');
 const webpack = require('webpack');
 
 // Configure.
-const customLoader = require.resolve('../');
+const rawCustomLoader = require.resolve('../');
 
 // Test suite.
-describe('custom-loader', () => {
+describe('raw-custom-loader', () => {
   // Output.
   const output = tmp.fileSync({ postfix: '.js' });
   after(output.removeCallback);
 
   // Tests.
-  it('should allow a custom loader', (done) => {
+  it('should allow a raw custom loader', (done) => {
     const replacement = `module.exports = ${Math.random()};`;
     webpack({
       context: __dirname,
@@ -58,7 +58,7 @@ describe('custom-loader', () => {
           {
             test: /.js$/,
             use: {
-              loader: customLoader,
+              loader: rawCustomLoader,
               options: {
                 callback: (source) => replacement
               }
@@ -90,7 +90,7 @@ describe('custom-loader', () => {
         rules: [
           {
             test: /.js$/,
-            use: customLoader
+            use: rawCustomLoader
           }
         ]
       }

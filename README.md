@@ -1,11 +1,11 @@
-# custom-loader
-> Custom loader module for webpack.
+# raw-custom-loader
+> Raw custom loader module for webpack.
 
 ## Install
-`$ npm install custom-loader`
+`$ npm install raw-custom-loader`
 
 ## Usage
-This module is useful for those times you want a loader but cant find or want to write one. How about just writing a function instead?
+This module is useful for those times you want a loader but cant find or want to write one. How about just writing a function instead? Please note this is a raw loader.
 
 ### Example 1
 Performs a simple string replace.
@@ -16,7 +16,7 @@ Performs a simple string replace.
     rules: [{
       test: /\.js$/,
       use: {
-        loader: 'custom-loader',
+        loader: 'raw-custom-loader',
         options: {
           callback: (source) => {
             return source.replace('foo', 'bar');
@@ -37,7 +37,7 @@ Using [`sharp`](https://www.npmjs.com/package/sharp), returns the grayscale vers
     rules: [{
       test: /\.(gif|jpe?g|png|svg|tiff|webp)$/,
       use: {
-        loader: 'custom-loader',
+        loader: 'raw-custom-loader',
         options: {
           callback: (source, sourceMap, callback) => {
             sharp(source).grayscale().toBuffer(callback);
