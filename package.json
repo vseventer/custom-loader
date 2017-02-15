@@ -1,6 +1,6 @@
 {
   "name"        : "custom-loader",
-  "version"     : "0.1.0-dev",
+  "version"     : "0.1.0",
   "description" : "Custom loader module for webpack.",
   "keywords"    : [ "webpack", "loader", "module", "callback" ],
   "homepage"    : "https://github.com/vseventer/custom-loader",

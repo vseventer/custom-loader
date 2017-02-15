@@ -29,7 +29,7 @@ Performs a simple string replace.
 ```
 
 ### Example 2
-Using `[sharp](https://www.npmjs.com/package/sharp)`, returns the grayscale version of the resource.
+Using [`sharp`](https://www.npmjs.com/package/sharp), returns the grayscale version of the resource.
 
 ```
 {
