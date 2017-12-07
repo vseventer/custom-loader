@@ -13,7 +13,7 @@
     "pretest" : "semistandard | snazzy",
     "test"    : "mocha"
   },
-  "dependencies": { "loader-utils": "0.2.x" },
+  "dependencies": { "loader-utils": "0.2.16" },
   "devDependencies": {
     "chai"         : "3.5.x",
     "mocha"        : "3.2.x",
